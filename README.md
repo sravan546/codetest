@@ -27,7 +27,7 @@ This project uses Maven. <b>Please install maven </b>
 <li>
   <h3>Time and space complexity</h3>
   <ol type="a">
-    <pre>
+
     <li> findLongestWord()  :  Time complexity  O(N) and Space complexity O(1)</li>
     <li> findAllLongestWords() :  Time complexity O(N+K) where n is total length of sentence and
                                                       K is number of words in sentence
@@ -36,7 +36,7 @@ This project uses Maven. <b>Please install maven </b>
    <li> findLongestWord2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
   <li> findAllLongestWords2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
 
-    </pre>
+   
   </ol>
 </li>
   
