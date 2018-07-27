@@ -17,7 +17,7 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <h3>Classes</h3>
   <ol type="a">
 
-     <li> test classe <pre> com.mastercard.EnglishSentenceServiceTest.java </pre> </li>
+  <li> test classe <pre> com.mastercard.EnglishSentenceServiceTest.java </pre> </li>
 </ol>
 </li>
 
