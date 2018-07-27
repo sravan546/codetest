@@ -42,7 +42,7 @@ This project uses Maven. <b>Please install maven </b>
   
   
  <li>         
-<h3>For your convenience I have also included Main class which you run to provide your own input </h3>
+<h3>For your convenience I have also included Main class which you can run to provide your own input </h3>
  <ol type="a">
    <li> Open terminal or dos prompt </li>
   <li> Go into project root directory .Which is "codetest" directory</li>
