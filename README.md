@@ -1,6 +1,6 @@
 <h1> Longest word in a sentence </h1>
 
-This project uses Maven. <b>Please install maven </b>
+For this project I used java and Maven .<b>Please install jdk 1.5 or above and maven 3.0 or above </b>
 
 <ol type="1">
 <li><h3>To Run Tests</h3>
@@ -28,13 +28,13 @@ This project uses Maven. <b>Please install maven </b>
   <h3>Time and space complexity</h3>
   <ol type="a">
     <pre>
-    <li> findLongestWord()  :  Time complexity  O(N) and Space complexity O(1)</li>
-    <li> findAllLongestWords() :  Time complexity O(N+K) where n is total length of sentence and
-                                                      K is number of words in sentence
-                                 Space complexity O(K)
+    <li> findLongestWord()  :  Time complexity  O(N) and space complexity O(1)</li>
+    <li> findAllLongestWords() :  Time complexity O(N) where n is total length of sentence and
+                                                  
+                                 Space complexity O(K)     K is number of words in sentence
     </li>
-   <li> findLongestWord2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
-  <li> findAllLongestWords2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
+   <li> findLongestWord2()  : Time complexity  O(N) and space complexity O(N) </li>
+  <li> findAllLongestWords2()  : Time complexity  O(N) and space complexity O(N) </li>
 
    </pre>
   </ol>
