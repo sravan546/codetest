@@ -8,8 +8,9 @@ I.To Running Tests only
   3. You should see output as below <br>
               &nbsp; Results :Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
           
-II.For your convinience i have also included Main class to run where you can provide your own input 
+
  <ol tyle="1">
+  For your convinience i have also included Main class to run where you can provide your own input 
   <li>cd into project root directory .Which is "codetest" directory</li>
   <li> Execute below command  <pre>mvn test -Prun</pre></li>
   <li> Program will prompt you as below  <pre>Please enter the sentence:</pre></li>
