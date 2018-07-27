@@ -76,7 +76,7 @@ public class EnglishSentenceService {
             int max = Integer.MIN_VALUE;
             int wordBeginIndex =0;
             int counter=0;
-            List<Integer> resultIndeces = new ArrayList<>();
+            List<Integer> resultIndeces = new ArrayList<Integer>();
             for(int i=0;i<sentence.length();i++){
                 if(sentence.charAt(i)!=' '){
                     counter++;
