@@ -8,7 +8,7 @@ To begin with this project uses Maven .<b>Please install maven </b>
   <li> Go into project root directory .Which is "codetest" directory</li>
   <li> Execute below command  <pre>mvn test</pre></li>
   <li> You should see output as below <br></li>
-  <pre>Results :Tests run: 11, Failures: 0, Errors: 0, Skipped: 0</pre>
+  <pre>Results :Tests run: 12, Failures: 0, Errors: 0, Skipped: 0</pre>
   </ol></li>
  <li>         
 <h3>For your convinience i have also included Main class where you can provide your own input </h3>
