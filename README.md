@@ -18,7 +18,10 @@ This project uses Maven .<b>Please install maven </b>
   <li> Execute below command  <pre>mvn test -Prun</pre></li>
   <li> Program will prompt you as below  <pre>Please enter the sentence:</pre></li>
   <li> Enter sentence you want to test </li>
-  <li> You shoud see two output lines as below</li>
+  <li> You shoud see two output lines as below
+  <pre>The largest word in your sentence is </pre>
+  <pre>The largest word's length is  </pre>
+  </li>
  </li>
  </ol>
 <li>
