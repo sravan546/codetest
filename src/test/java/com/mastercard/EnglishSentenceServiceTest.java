@@ -157,17 +157,18 @@ public class EnglishSentenceServiceTest {
     @Test
     public void  testFindAllLongestWord(){
 
-      LongestWordResult[] results  = englishSentenceService.findAllLongestWords("Jumped bumped pumped dumped");
+      LongestWordResult[] results  = englishSentenceService.findAllLongestWords("Jumped bumped pumped tumped");
         Assert.assertEquals(4,results.length);
         assertResults(results[0],"Jumped",6);
         assertResults(results[1],"bumped",6);
         assertResults(results[2],"pumped",6);
-        assertResults(results[3],"dumped",6);
+        assertResults(results[3],"tumped",6);
+
     }
 
     @Test
     public void  testFindAllLongestWordWhenLastisLongest(){
-        LongestWordResult[] results  = englishSentenceService.findAllLongestWords("Jumped bumped pumped dumped mountain");
+        LongestWordResult[] results  = englishSentenceService.findAllLongestWords("Jumped bumped pumped tumped mountain");
         Assert.assertEquals(1,results.length);
         assertResults(results[0],"mountain",8);
     }
