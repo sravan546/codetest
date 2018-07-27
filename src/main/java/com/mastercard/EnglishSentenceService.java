@@ -18,13 +18,14 @@ public class EnglishSentenceService {
                     2.When input is other than english language it simply processes it as english letters
                     3.When sentence has more than one word which that has longest then it only returns first found longest word
                 */
-        public SentenceResult findFirstLongestWord(final String sentence) {
+        public SentenceResult findFirstLongestWord(String sentence) {
                 SentenceResult result = null;
                 if(sentence == null || sentence.length()==0) {
                     return new SentenceResult(sentence);
                 }
-
-                int max = Integer.MIN_VALUE;
+                //removing all the punctuation marks
+            sentence = removePunctuations(sentence);
+            int max = Integer.MIN_VALUE;
                 int wordBeginIndex =0;
                 int counter=0;
                 int resultIndex =0;
@@ -49,8 +50,7 @@ public class EnglishSentenceService {
 
 
 
-
-        /**
+    /**
          *
          *
          *
@@ -64,12 +64,15 @@ public class EnglishSentenceService {
          *
          *
          */
-        public SentenceResult[] findAllLongestWord(String sentence){
+        public SentenceResult[] findAllLongestWords(String sentence){
 
             if(sentence == null || sentence.length()==0) {
-
+                  SentenceResult[] results  = new SentenceResult[1];
+                  results[0] = new SentenceResult(sentence);
+                  return  results;
             }
-
+            //removing all the punctuation marks
+            sentence = removePunctuations(sentence);
             int max = Integer.MIN_VALUE;
             int wordBeginIndex =0;
             int counter=0;
@@ -101,4 +104,12 @@ public class EnglishSentenceService {
             }
             return results;
         }
+
+
+        private String removePunctuations(String sentence) {
+            sentence = sentence.replaceAll("[\\p{Punct}]", "");
+            return sentence;
+        }
+
+
 }
