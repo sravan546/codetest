@@ -11,7 +11,7 @@ This project uses Maven .<b>Please install maven </b>
   <pre>Results :Tests run: 12, Failures: 0, Errors: 0, Skipped: 0</pre>
   </ol></li>
  <li>         
-<h3>For your convinience i have also included Main class where you can provide your own input </h3>
+<h3>For your convinience i have also included Main class which you run to provide your own input </h3>
  <ol type="a">
  
   <li> Go into project root directory .Which is "codetest" directory</li>
