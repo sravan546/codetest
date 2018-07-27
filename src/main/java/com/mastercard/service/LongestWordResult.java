@@ -2,7 +2,7 @@ package com.mastercard.service;
 
 public class LongestWordResult {
 
-    private String word; //incase more than one word found which is longest
+    private String word;
 
     public LongestWordResult(final String word) {
         this.word=word;
