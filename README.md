@@ -20,9 +20,9 @@ To begin with this project uses Maven .<b>Please install maven </b>
   <li> Enter sentence you want to test </li>
   <li> You shoud see two output lines as below</li>
  </li>
-
-  <li>
-  </ol>
+ </ol>
+<li>
+ 
   <h3>Some assumptions i made</h3>
   <ol type="a">
     <li>When null or empty i assumed you output to be empty string and 0</li>
