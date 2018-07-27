@@ -31,7 +31,7 @@ This project uses Maven .<b>Please install maven </b>
     <pre>
     <li> findFirstLongestWord() :  Time complexity  O(N) and Space complexity O(1)</li>
     <li> findAllLongestWords():  Time complexity O(n+k) where n is total length of sentence and
-                                                              k is number of words in sentence
+                                                      k is number of words in sentence
                                  Space complexity O(k)
     </li>
     </pre>
