@@ -5,7 +5,7 @@ This project uses Maven. <b>Please install maven </b>
 <ol type="1">
 <li><h3>To Run Tests</h3>
 <ol type="a">
-  <li>Open terminal</li>
+  <li>Open terminal or dos mac window</li>
   <li> Go into project root directory. Which is "codetest" directory</li>
   <li> Execute below command <pre>mvn test</pre></li>
   <li> You should see output as below <br></li>
@@ -16,8 +16,7 @@ This project uses Maven. <b>Please install maven </b>
  
   <h3>Some assumptions I made</h3>
   <ol type="a">
-      <li> Open terminal</li>
-    <li>When null or empty I assumed output to be null and empty string respective and length will be 0</li>
+<li>When null or empty I assumed output to be null and empty string respective and length will be 0</li>
     <li>When input is other than English language it simply processes it as English sentence </li>
     <li>When sentence has more than one longest word then it only returns first longest word in    sentence.</li>
    <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods</li>
@@ -41,7 +40,7 @@ This project uses Maven. <b>Please install maven </b>
  <li>         
 <h3>For your convenience I have also included Main class which you run to provide your own input </h3>
  <ol type="a">
- 
+   <li> Open terminal or dos prompt </li>
   <li> Go into project root directory .Which is "codetest" directory</li>
   <li> Execute below command  <pre>mvn test -Prun</pre></li>
   <li> Program will prompt you as below  <pre>Please enter the sentence:</pre></li>
@@ -54,3 +53,4 @@ This project uses Maven. <b>Please install maven </b>
  </ol>
 
 </ol>
+
