@@ -21,7 +21,7 @@ public class EnglishSentenceService {
                       I kept it as seprate method because time complexity varies for both methods
 
                 */
-        public SentenceResult findFirstLongestWord(String sentence) {
+        public SentenceResult findLongestWord(String sentence) {
                 SentenceResult result = null;
                 if(sentence == null || sentence.length()==0) {
                     return new SentenceResult(sentence);
@@ -58,7 +58,7 @@ public class EnglishSentenceService {
          *
          *
          * BONUS code test
-         * findFirstLongestWord only returns one longest word even If it has more that one longest word
+         * findLongestWord only returns one longest word even If it has more that one longest word
          * .Since this is take home test i cannot   ask anyone to clarify  , but during test cases scenario i had this test case so making code for it.
          *
          * Time complexity O(n+k) where n is total length of string and
