@@ -20,7 +20,7 @@ This project uses Maven. <b>Please install maven </b>
     <li>When input is other than English language it simply processes it as English sentence .</li>
     <li>When sentence has more than one longest word then it only returns first longest word in  a  sentence. </li>
    <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods.</li>
-<li>I have also created concise version of above methods called findAllLongestWord2() and findAllLongestWord2(). These method are concise but time and space complexity increased.
+<li>I have also created concise version of above methods called findLongestWord2() and findAllLongestWords2(). These methods are concise but time and space complexity increased.
    </ol>
 </li>
 
