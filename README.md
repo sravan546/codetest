@@ -1,6 +1,6 @@
 <h1> Longest word in a sentence </h1>
 
-To begin with this project uses Maven .<b>Please install maven </b>
+This project uses Maven .<b>Please install maven </b>
 
 <ol type="1">
 <li><h3>To Running Tests</h3>
