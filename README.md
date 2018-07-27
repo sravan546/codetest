@@ -11,7 +11,7 @@ To begin with this project uses Maven .<b>Please install maven </b>
               &nbsp; Results :Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
   </ol></li>
  <li>         
-<h3>2. For your convinience i have also included Main class where you can provide your own input </h3>
+<h3>For your convinience i have also included Main class where you can provide your own input </h3>
  <ol type="a">
  
   <li> Go into project root directory .Which is "codetest" directory</li>
@@ -20,9 +20,9 @@ To begin with this project uses Maven .<b>Please install maven </b>
   <li> Enter sentence you want to test </li>
   <li> You shoud see two output lines as below</li>
  </li>
-  </li>
+
   <li>
-<h3>3. Some assumptions i made</h3>
+<h3>Some assumptions i made</h3>
 <ol type="a">
   <li>When null or empty i assumed you output to be empty string and 0</li>
   <li>When sentences of other languages are passed it simple processed it as english letters </li>
