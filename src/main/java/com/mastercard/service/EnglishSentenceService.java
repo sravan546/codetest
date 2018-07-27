@@ -19,11 +19,11 @@ public class EnglishSentenceService implements SentenceService {
                       I kept it as seprate method because time complexity varies for both methods
 
                 */
-        public LongesWordResult findLongestWord(String sentence) {
+        public LongestWordResult findLongestWord(String sentence) {
 
-                LongesWordResult result = null;
+                LongestWordResult result = null;
                 if(sentence == null || sentence.length()==0) {
-                    return new LongesWordResult(sentence);
+                    return new LongestWordResult(sentence);
                 }
                     //removing all the punctuation marks
                 sentence = removePunctuations(sentence);
@@ -46,7 +46,7 @@ public class EnglishSentenceService implements SentenceService {
                 }
 
                 String word = sentence.substring(resultIndex,resultIndex+max);
-                result= new LongesWordResult(word);
+                result= new LongestWordResult(word);
                 return result;
         }
 
@@ -66,11 +66,11 @@ public class EnglishSentenceService implements SentenceService {
          *
          *
          */
-        public LongesWordResult[] findAllLongestWords(String sentence){
+        public LongestWordResult[] findAllLongestWords(String sentence){
 
             if(sentence == null || sentence.length()==0) {
-                  LongesWordResult[] results  = new LongesWordResult[1];
-                  results[0] = new LongesWordResult(sentence);
+                  LongestWordResult[] results  = new LongestWordResult[1];
+                  results[0] = new LongestWordResult(sentence);
                   return  results;
             }
             //removing all the punctuation marks
@@ -96,11 +96,11 @@ public class EnglishSentenceService implements SentenceService {
                 }
 
             }
-            LongesWordResult[] results = new LongesWordResult[resultIndeces.size()];
+            LongestWordResult[] results = new LongestWordResult[resultIndeces.size()];
             int i=0;
             for(Integer resultIndex:resultIndeces){
                 String word = sentence.substring(resultIndex,resultIndex+max);
-                LongesWordResult result= new LongesWordResult(word);
+                LongestWordResult result= new LongestWordResult(word);
                 results[i]=result;
                 i++;
             }
