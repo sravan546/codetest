@@ -59,6 +59,7 @@ public class EnglishSentenceServiceTest {
         assertResults(result,"mountain",8);
     }
 
+    //
     @Test
     public  void testLongestWordWhenPunctuationMarks(){
         String sentence = "The                   cow jumped!!!!!!!!!! over    the  water mountain      .";
@@ -66,7 +67,7 @@ public class EnglishSentenceServiceTest {
         assertResults(result,"mountain",8);
     }
 
-    //this tests when  uneven space
+    //this tests when  first word is longer
     @Test
     public void testLongestWordWhenFirstWordIsLonger(){
         String sentence = "elephant                    jumped over    the  water moon      .";
@@ -74,7 +75,7 @@ public class EnglishSentenceServiceTest {
         assertResults(result,"elephant",8);
     }
 
-    //this tests when  uneven space
+    //this tests when  last word is longer
     @Test
     public void testLongestWordWhenLastWordIsLonger(){
         String sentence = "elephant                    jumped over    the  water mountains";
