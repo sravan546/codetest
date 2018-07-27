@@ -25,7 +25,7 @@ To begin with this project uses Maven .<b>Please install maven </b>
  
   <h3>Some assumptions i made</h3>
   <ol type="a">
-    <li>When null or empty i assumed you output to be empty string and 0</li>
+    <li>When null or empty i assumed  output to be null and empty string and length will be 0</li>
     <li>When sentences of other languages are passed it simple processed it as english letters </li>
     <li> When sentence has more than one word which is longest then it only returns first found words</li>
    </ol>
