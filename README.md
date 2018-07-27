@@ -28,11 +28,13 @@ This project uses Maven .<b>Please install maven </b>
 <li>
   <h3>Time and space complexity</h3>
   <ol type="a">
+    <pre>
     <li> findFirstLongestWord() :  Time complexity  O(N) and Space complexity O(1)</li>
     <li> findAllLongestWords():  Time complexity O(n+k) where n is total length of sentence and
-                                      k is number of words in string
+                                      k is number of words in sentence
           Space complexity O(k)
     </li>
+    </pre>
   </ol>
 </li>
   
