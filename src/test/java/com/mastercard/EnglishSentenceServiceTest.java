@@ -59,7 +59,7 @@ public class EnglishSentenceServiceTest {
         assertResults(result,"mountain",8);
     }
 
-    //
+    //test when word have punctuation  marks
     @Test
     public  void testLongestWordWhenPunctuationMarks(){
         String sentence = "The                   cow jumped!!!!!!!!!! over    the  water mountain      .";
@@ -97,7 +97,9 @@ public class EnglishSentenceServiceTest {
         String sentence = "J";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
         assertResults(result,"J",1);
-    } //this tests one letter sentences
+    }
+
+    //test incremental words
     @Test
     public void testLongestWordWhenIncrementalLetter(){
         String sentence = "j jj jjj jjjj jjjjj jjjjjj jjjjjjj";
@@ -123,6 +125,7 @@ public class EnglishSentenceServiceTest {
     }
 
 
+    //test paragraph sentences
     @Test
     public  void  testLongestWordWhenParagraph(){
         String longestWordInEnglish="Pneumonoultramicroscopicsilicovolcanoconiosis";
