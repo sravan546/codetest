@@ -1,12 +1,10 @@
-package com.mastercard;
-
-
+package com.mastercard.service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
-public class EnglishSentenceService {
+
+public class EnglishSentenceService implements SentenceService {
             /*
 
             My below algorithm has  Time complexity  O(N) and Space complexity O(1)
@@ -21,14 +19,15 @@ public class EnglishSentenceService {
                       I kept it as seprate method because time complexity varies for both methods
 
                 */
-        public SentenceResult findLongestWord(String sentence) {
-                SentenceResult result = null;
+        public LongesWordResult findLongestWord(String sentence) {
+
+                LongesWordResult result = null;
                 if(sentence == null || sentence.length()==0) {
-                    return new SentenceResult(sentence);
+                    return new LongesWordResult(sentence);
                 }
-                //removing all the punctuation marks
-            sentence = removePunctuations(sentence);
-            int max = Integer.MIN_VALUE;
+                    //removing all the punctuation marks
+                sentence = removePunctuations(sentence);
+                int max = Integer.MIN_VALUE;
                 int wordBeginIndex =0;
                 int counter=0;
                 int resultIndex =0;
@@ -44,10 +43,10 @@ public class EnglishSentenceService {
                         resultIndex=wordBeginIndex;
                         max=counter;
                     }
-
                 }
+
                 String word = sentence.substring(resultIndex,resultIndex+max);
-                result= new SentenceResult(word);
+                result= new LongesWordResult(word);
                 return result;
         }
 
@@ -67,11 +66,11 @@ public class EnglishSentenceService {
          *
          *
          */
-        public SentenceResult[] findAllLongestWords(String sentence){
+        public LongesWordResult[] findAllLongestWords(String sentence){
 
             if(sentence == null || sentence.length()==0) {
-                  SentenceResult[] results  = new SentenceResult[1];
-                  results[0] = new SentenceResult(sentence);
+                  LongesWordResult[] results  = new LongesWordResult[1];
+                  results[0] = new LongesWordResult(sentence);
                   return  results;
             }
             //removing all the punctuation marks
@@ -97,11 +96,11 @@ public class EnglishSentenceService {
                 }
 
             }
-            SentenceResult[] results = new SentenceResult[resultIndeces.size()];
+            LongesWordResult[] results = new LongesWordResult[resultIndeces.size()];
             int i=0;
             for(Integer resultIndex:resultIndeces){
                 String word = sentence.substring(resultIndex,resultIndex+max);
-                SentenceResult result= new SentenceResult(word);
+                LongesWordResult result= new LongesWordResult(word);
                 results[i]=result;
                 i++;
             }

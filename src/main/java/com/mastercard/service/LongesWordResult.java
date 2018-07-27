@@ -1,10 +1,10 @@
-package com.mastercard;
+package com.mastercard.service;
 
-public class SentenceResult {
+public class LongesWordResult {
 
     private String word; //incase more than one word found which is longest
 
-    public SentenceResult(final String word) {
+    public LongesWordResult(final String word) {
         this.word=word;
     }
 
