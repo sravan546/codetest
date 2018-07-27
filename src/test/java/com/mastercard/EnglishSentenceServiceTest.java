@@ -103,12 +103,7 @@ public class EnglishSentenceServiceTest {
         assertResults(result,"mountain",8);
     }
 
-    //this tests when sentence is not english
-    @Test(expected=IllegalArgumentException.class)
-    public void testLongestWordWhenWhenNonEnglish(){
-        String sentence = "もう一度言ってください";
-        SentenceResult result= englishSentenceService.findLongestWord(sentence);
-    }
+
 
 
     @Test
