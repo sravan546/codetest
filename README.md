@@ -1,6 +1,6 @@
 <h1> Longest word in a sentence </h1>
 
-For this project i used java and Maven .<b>Please install jdk 1.5 or above and maven 3.0 or above </b>
+For this project I used java and Maven .<b>Please install jdk 1.5 or above and maven 3.0 or above </b>
 
 <ol type="1">
 <li><h3>To Run Tests</h3>
