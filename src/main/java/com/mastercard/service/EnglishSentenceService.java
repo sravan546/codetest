@@ -63,9 +63,9 @@ public class EnglishSentenceService implements SentenceService {
          * findLongestWord only returns one longest word even If it has more that one longest word
          * .Since this is take home test i cannot   ask anyone to clarify  , but during test cases scenario i had this test case so making code for it.
          *
-         * Time complexity O(n+k) where n is total length of string and
-         *                              k is number of words in string
-         * Space complexity O(k)
+         * Time complexity O(n) where n is total length of string and
+         *
+         * Space complexity O(k)   k is number of words in string
          *
          *
          */
