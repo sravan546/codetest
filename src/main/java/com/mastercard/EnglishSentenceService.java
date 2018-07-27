@@ -14,9 +14,12 @@ public class EnglishSentenceService {
 
 
         Assumptions :
-                    1.When null or empty i assumed output to be null and empty string and length will be 0
+                    1.When null or empty i assumed output to be null and empty string respective and length will be 0
                     2.When input is other than english language it simply processes it as english letters
-                    3.When sentence has more than one word which that has longest then it only returns first found longest word
+                    3.When sentence has more than one longest word then it only returns first found longest word.
+                      However i have created new bonus method called findAllLongestWords() where it will give all the longest words.
+                      I kept it as seprate method because time complexity varies for both methods
+
                 */
         public SentenceResult findFirstLongestWord(String sentence) {
                 SentenceResult result = null;
