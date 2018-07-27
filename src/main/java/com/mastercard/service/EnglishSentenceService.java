@@ -114,7 +114,7 @@ public class EnglishSentenceService implements SentenceService {
         /*
         *
         * Below code is using String.split fiuntion . We have concise code but time and space complexity increased
-        *  Time complexity : O(n+K)
+        *  Time complexity : O(n)
          * Space complexity: O(n)
          *
         * */
@@ -123,7 +123,7 @@ public class EnglishSentenceService implements SentenceService {
                 return new LongestWordResult(sentence);
             }
             sentence = removePunctuations(sentence);
-            String[] words = sentence.split(" ");//time:O(n) space:O(n)
+            String[] words = sentence.split(" ");// space:O(n)
             LongestWordResult  result = null;
             int longestWordLength =Integer.MIN_VALUE;
             for(String word:words){  //O(k)
@@ -137,7 +137,7 @@ public class EnglishSentenceService implements SentenceService {
 
        /*this is using java String.split() method. We have concise code but the time and space complexity increased
        *
-       * Time complexity : O(n+K)
+       * Time complexity : O(n)
        * Space complexity: O(n)
        * */
          public LongestWordResult[] findAllLongestWords2(String sentence){
@@ -148,10 +148,10 @@ public class EnglishSentenceService implements SentenceService {
              }
              //removing all the punctuation marks
              sentence = removePunctuations(sentence);
-             String[] words = sentence.split(" ");//time:O(n) space:O(n)
+             String[] words = sentence.split(" ");// space:O(n)
              List<LongestWordResult> longestWords = new ArrayList<LongestWordResult>();
              int longestWordLength =Integer.MIN_VALUE;
-             for(String word:words){  //O(k)
+             for(String word:words){
                   if(longestWordLength < word.length())  {
                       longestWords.clear();
                       longestWords.add(new LongestWordResult(word));
