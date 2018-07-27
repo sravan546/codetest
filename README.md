@@ -28,7 +28,7 @@ To begin with this project uses Maven .<b>Please install maven </b>
     <li>When null or empty i assumed  output to be null and empty string and length will be 0</li>
     <li>When input is other than english language it simply processes it as english letters </li>
     <li>When sentence has more than one word which that has longest then it only returns first found longest word</li>
-    <hidden><li>I wrote bonus code for the problem where sentence has more than one word which is longest.You can find the method      findAllLongestWords()</li></hidden>
+    
    </ol>
 </li>
 </ol>
