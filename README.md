@@ -10,21 +10,8 @@ This project uses Maven .<b>Please install maven </b>
   <li> You should see output as below <br></li>
   <pre>Results :Tests run: 12, Failures: 0, Errors: 0, Skipped: 0</pre>
   </ol></li>
- <li>         
-<h3>For your convinience i have also included Main class which you run to provide your own input </h3>
- <ol type="a">
- 
-  <li> Go into project root directory .Which is "codetest" directory</li>
-  <li> Execute below command  <pre>mvn test -Prun</pre></li>
-  <li> Program will prompt you as below  <pre>Please enter the sentence:</pre></li>
-  <li> Enter sentence you want to test </li>
-  <li> You shoud see two output lines as below
-  <pre>The largest word in your sentence is<br>The largest word's length is </pre>
   
-  </li>
- </li>
- </ol>
-<li>
+  <li>
  
   <h3>Some assumptions i made</h3>
   <ol type="a">
@@ -48,4 +35,21 @@ This project uses Maven .<b>Please install maven </b>
     </li>
   </ol>
 </li>
+  
+  
+ <li>         
+<h3>For your convinience i have also included Main class which you run to provide your own input </h3>
+ <ol type="a">
+ 
+  <li> Go into project root directory .Which is "codetest" directory</li>
+  <li> Execute below command  <pre>mvn test -Prun</pre></li>
+  <li> Program will prompt you as below  <pre>Please enter the sentence:</pre></li>
+  <li> Enter sentence you want to test </li>
+  <li> You shoud see two output lines as below
+  <pre>The largest word in your sentence is<br>The largest word's length is </pre>
+  
+  </li>
+ </li>
+ </ol>
+
 </ol>
