@@ -37,4 +37,15 @@ This project uses Maven .<b>Please install maven </b>
     
    </ol>
 </li>
+
+<li>
+  <h3>Time and space complexity</h3>
+  <ol type="a">
+    <li> findFirstLongestWord() :  Time complexity  O(N) and Space complexity O(1)</li>
+    <li> Time complexity O(n+k) where n is total length of string and
+         *                              k is number of words in string
+         * Space complexity O(k)
+    </li>
+  </ol>
+</li>
 </ol>
