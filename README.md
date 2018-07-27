@@ -16,27 +16,27 @@ This project uses Maven. <b>Please install maven </b>
  
   <h3>Some assumptions I made</h3>
   <ol type="a">
-<li>When null or empty I assumed output to be null and empty string respective and length will be 0</li>
-    <li>When input is other than English language it simply processes it as English sentence </li>
+<li>When null or empty I assumed output to be null and empty string respective and length will be 0.</li>
+    <li>When input is other than English language it simply processes it as English sentence .</li>
     <li>When sentence has more than one longest word then it only returns first longest word in    sentence. </li>
-   <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods</li>
-<li>I have also created concise version of above methods called findAllLongestWord2() and findAllLongestWord2(). These are concise but time and space complexity increased
+   <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods.</li>
+<li>I have also created concise version of above methods called findAllLongestWord2() and findAllLongestWord2(). These are concise but time and space complexity increased.
    </ol>
 </li>
 
 <li>
   <h3>Time and space complexity</h3>
   <ol type="a">
-<pre>
-  <li> findLongestWord()  :  Time complexity  O(N) and Space complexity O(1)</li>
-  <li> findAllLongestWords() :  Time complexity O(N+K) where n is total length of sentence and
-                                                    K is number of words in sentence
-                               Space complexity O(K)
-  </li>
+    <pre>
+    <li> findLongestWord()  :  Time complexity  O(N) and Space complexity O(1)</li>
+    <li> findAllLongestWords() :  Time complexity O(N+K) where n is total length of sentence and
+                                                      K is number of words in sentence
+                                 Space complexity O(K)
+    </li>
    <li> findLongestWord2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
-   <li> findAllLongestWords2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
-</pre>
-   
+  <li> findAllLongestWords2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
+
+    </pre>
   </ol>
 </li>
   
