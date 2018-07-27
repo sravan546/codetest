@@ -1,5 +1,5 @@
 
- This project uses Maven .<b>Please install maven <b>
+ This project uses Maven .<b>Please install maven </b>
 
 To Running Tests only
   1. cd into project root directory .Which is "codetest" directory
