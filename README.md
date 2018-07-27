@@ -9,10 +9,11 @@ I.To Running Tests only
               &nbsp; Results :Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
           
 II.For your convinience i have also included Main class to run where you can provide your own input 
- 
-  1. cd into project root directory .Which is "codetest" directory
-  2. Execute below command  <pre>mvn test -Prun</pre>
-  3. Program will prompt you as below  <pre>Please enter the sentence:</pre>
-  4. Enter sentence you want to test 
-  5. You shoud see two output lines as below
+ <li>
+  <ol>cd into project root directory .Which is "codetest" directory</ol>
+  <ol> Execute below command  <pre>mvn test -Prun</pre></ol>
+ v<ol> Program will prompt you as below  <pre>Please enter the sentence:</pre></ol>
+  <ol> Enter sentence you want to test </ol>
+  <ol> You shoud see two output lines as below</ol>
+ </li>
   
