@@ -17,13 +17,7 @@ public class EnglishSentenceServiceTest {
         englishSentenceService = new EnglishSentenceService();
     }
 
-    //when null return 0
-    //when empty string return 0
-    //when too much or double space
-    //when number
-    //single character
-    //when invalid character then return invalid characters
-    //when not english language
+
     //this tests when sentence is null
     @Test
     public void testLongestWordWhenNull(){
