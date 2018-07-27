@@ -8,7 +8,7 @@ I.To Running Tests only
   3. You should see output as below <br>
               &nbsp; Results :Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
           
-<h2>For your convinience i have also included Main class to run where you can provide your own input </h2>
+<h3>For your convinience i have also included Main class to run where you can provide your own input </h3>
  <ol tyle="1">
  
   <li>cd into project root directory .Which is "codetest" directory</li>
