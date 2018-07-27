@@ -18,7 +18,7 @@ This project uses Maven. <b>Please install maven </b>
   <ol type="a">
 <li>When null or empty I assumed output to be null and empty string respective and length will be 0</li>
     <li>When input is other than English language it simply processes it as english sentence </li>
-    <li>When sentence has more than one longest word then it only returns first longest word in    sentence.</li>
+    <li>When sentence has more than one longest word then findLongestWord() only returns first longest word in sentence.</li>
    <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods</li>
    </ol>
 </li>
