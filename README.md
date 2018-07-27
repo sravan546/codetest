@@ -5,7 +5,7 @@ This project uses Maven. <b>Please install maven </b>
 <ol type="1">
 <li><h3>To Run Tests</h3>
 <ol type="a">
-  <li>Open terminal or dos mac window</li>
+  <li>Open terminal or dos window</li>
   <li> Go into project root directory. Which is "codetest" directory</li>
   <li> Execute below command <pre>mvn test</pre></li>
   <li> You should see output as below <br></li>
