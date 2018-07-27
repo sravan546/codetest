@@ -145,6 +145,7 @@ public class EnglishSentenceServiceTest {
     }
 
 
+    //tests if multiple words are longest in sentence
     @Test
     public void  testFindAllLongestWord(){
 
@@ -157,6 +158,7 @@ public class EnglishSentenceServiceTest {
 
     }
 
+    //tests if multiple words are longest in sentence
     @Test
     public void  testFindAllLongestWordWhenLastisLongest(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWords("Jumped bumped pumped tumped mountain");
