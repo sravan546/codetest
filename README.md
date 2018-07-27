@@ -33,8 +33,8 @@ This project uses Maven. <b>Please install maven </b>
                                                       K is number of words in sentence
                                  Space complexity O(K)
     </li>
-   <li> findLongestWord2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
-  <li> findAllLongestWords2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
+     <li> findLongestWord2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
+     <li> findAllLongestWords2()  : Time complexity  O(N+K) and Space complexity O(N) </li>
 
    
   </ol>
