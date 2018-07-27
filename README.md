@@ -17,7 +17,7 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <h3>Some assumptions I made</h3>
   <ol type="a">
 <li>When null or empty I assumed output to be null and empty string respective and length will be 0.</li>
-    <li>When input is other than English language it simply processes it as English sentence .</li>
+    <li>When input is other than English language it simply processes it as english sentence .</li>
     <li>When sentence has more than one longest word then findLongestWord() only returns first longest word in  a  sentence. </li>
    <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods.</li>
 <li>I have also created concise version of above methods called findLongestWord2() and findAllLongestWords2(). These methods are concise but time and space complexity increased.
