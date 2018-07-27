@@ -7,8 +7,11 @@ import java.util.regex.Pattern;
 public class EnglishSentenceService {
     /*
 
-      Time complexity is O(N)
-      Space complexityu O(1)
+    My below algorithm has  Time complexity  O(N) and Space complexity O(1)
+
+    on contrary if coded using String.split(' ') and stored in array or list and then look at length of each word
+     that algorithm  would have been time complexity : O(n+k) and space complexity O(k)
+      where n is length of sentence and k is number of words in sentence
 
 
      */
