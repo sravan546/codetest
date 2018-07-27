@@ -30,8 +30,22 @@ This project uses Maven .<b>Please install maven </b>
   <ol type="a">
     <li>When null or empty i assumed  output to be null and empty string and length will be 0</li>
     <li>When input is other than english language it simply processes it as english letters </li>
-    <li>When sentence has more than one word which that has longest then it only returns first found longest word</li>
+    <li>When sentence has more than one word which  has longest word then it only returns first found longest word.
+        However i have created new bonus method called findAllLongestWord() where it will give all the longest words.
+        I kept it as seprate method because time complexity varies for both methods
+    </li>
     
    </ol>
+</li>
+
+<li>
+  <h3>Time and space complexity</h3>
+  <ol type="a">
+    <li> findFirstLongestWord() :  Time complexity  O(N) and Space complexity O(1)</li>
+    <li> findAllLongestWords():  Time complexity O(n+k) where n is total length of string and
+                                      k is number of words in string
+          Space complexity O(k)
+    </li>
+  </ol>
 </li>
 </ol>
