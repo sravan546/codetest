@@ -166,7 +166,7 @@ public class EnglishSentenceServiceTest {
 
     private void assertResults(LongestWordResult result, String expectedString, int expectedLength) {
         failWhenResultisNull(result);
-        assertEquals("Word should be "+expectedLength, expectedString, result.getLongestWord());
+        assertEquals("Word should be "+expectedString, expectedString, result.getLongestWord());
         assertEquals("Word length should be "+expectedLength, expectedLength, result.getLongestWordLength());
     }
 
