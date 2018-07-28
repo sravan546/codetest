@@ -45,7 +45,7 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
                                                   
                                  Space complexity O(K)     K is number of words in sentence
    </li>
-   Concise version of methods
+Concise versions
    <li> findLongestWord2()  : Time complexity  O(N) and space complexity O(N) </li>
   <li> findAllLongestWords2()  : Time complexity  O(N) and space complexity O(N) </li>
 
