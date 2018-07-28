@@ -42,7 +42,7 @@ public class EnglishSentenceService implements SentenceService {
                 int wordBeginIndex =0;
                 int counter=0;
                 int resultIndex =0;
-                for(int i=0;i<sentence.length();i++){
+                for(int i=0;i<sentence.length();i++){ //O(n)
                     if(sentence.charAt(i)!=' '){
                         counter++;
                     }
@@ -56,7 +56,7 @@ public class EnglishSentenceService implements SentenceService {
                     }
                 }
 
-                String word = sentence.substring(resultIndex,resultIndex+max);
+                String word = sentence.substring(resultIndex,resultIndex+max); //O(n)
                 result= new LongestWordResult(word);
                 return result;
         }
@@ -159,7 +159,7 @@ public class EnglishSentenceService implements SentenceService {
              String[] words = sentence.split(" ");// space:O(n)
              List<LongestWordResult> longestWords = new ArrayList<LongestWordResult>();
              int longestWordLength =Integer.MIN_VALUE;
-             for(String word:words){
+             for(String word:words){ //O(k)
                   if(longestWordLength < word.length())  {
                       longestWords.clear();
                       longestWords.add(new LongestWordResult(word));
