@@ -17,7 +17,10 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <h3>Classes</h3>
   <ol type="a">
 
-  <li> test class <pre> com.mastercard.EnglishSentenceServiceTest.java </pre> </li>
+     <li> test class <pre> com.mastercard.EnglishSentenceServiceTest.java </pre> </li>
+     <li> Service class  : This is where code exercise is implemented <pre>     com.mastercard.service.EnglishSentenceService.java </pre> </li>
+     <li> Service Interface <pre> com.mastercard.service.SentenceService.java </pre> </li>
+     <li> Result pojo : this is pojo which is returned by service methods<pre> com.mastercard.service.LongestWordResult.java </pre> </li>
 </ol>
 </li>
 
