@@ -8,8 +8,8 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <li>Open terminal or dos  window</li>
   <li> Go into project root directory. Which is "codetest" directory</li>
   <li> Execute below command <pre>mvn test</pre></li>
-  <li> You should see output as below <br></li>
-  <pre>Results: Tests run: 15, Failures: 0, Errors: 0, Skipped: 0</pre>
+  <li> You should see output as below <br>
+    <pre> Results: Tests run: 19, Failures: 0, Errors: 0, Skipped: 0</pre></li>
   </ol></li>
   
   <li>
