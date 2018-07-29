@@ -127,7 +127,7 @@ public class EnglishSentenceService implements SentenceService {
         *  Space complexity: O(n)
         *
         * */
-        public  LongestWordResult  findLongestWord2(String sentence){
+        public  LongestWordResult  findLongestWordConcise(String sentence){
             if(sentence == null || sentence.length()==0) {
                 return new LongestWordResult(sentence);
             }
@@ -149,7 +149,7 @@ public class EnglishSentenceService implements SentenceService {
        * Time complexity : O(n)
        * Space complexity: O(n)
        * */
-         public LongestWordResult[] findAllLongestWords2(String sentence){
+         public LongestWordResult[] findAllLongestWordsConcise(String sentence){
              if(sentence == null || sentence.length()==0) {
                  LongestWordResult[] results  = new LongestWordResult[1];
                  results[0] = new LongestWordResult(sentence);
