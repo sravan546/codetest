@@ -17,7 +17,7 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <h3>Assumptions</h3>
   <ol type="a">
 <li>When null or empty I assumed output to be null and empty string respectively and length will be 0.</li>
-    <li>When input is other than english language it simply processes it as english sentence .</li>
+    <li>When input is other than English language it simply processes it as English sentence .</li>
     <li>When sentence has more than one longest word then findLongestWord() only returns first longest word in  a  sentence. </li>
    <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods.</li>
 <li>I have also created bonus concise versions of above exercises called findLongestWordConcise() and findAllLongestWordsConcise(). These methods are concise but space complexity increased.</li>
@@ -33,8 +33,8 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
    <li> Test class for concise methods : This is where you can find all tests for concise version<pre> com.mastercard.EnglishSentenceConciseServiceTest </pre> </li>
    <li> Test suite: This is test suite for above two test classes <pre>com.mastercard.EnglishSentenceServiceSuite</pre></li>
    <li> Service class : This is where code exercise is implemented <pre> com.mastercard.service.EnglishSentenceService </pre> </li>
-   <li> Service Interface : Above service class implements this inteface<pre> com.mastercard.service.SentenceService </pre> </li>
-   <li> Result pojo : This is pojo which is returned by service methods<pre> com.mastercard.service.LongestWordResult </pre> </li>
+   <li> Service Interface : Above service class implements this interface<pre> com.mastercard.service.SentenceService </pre> </li>
+   <li> Result POJO : This is POJO which is returned by service methods<pre> com.mastercard.service.LongestWordResult </pre> </li>
 </ol>
 </li>
 
@@ -74,5 +74,6 @@ Concise versions
  </ol>
 
 </ol>
+
 
 
