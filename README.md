@@ -17,9 +17,9 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <h3>Classes</h3>
   <ol type="a">
 
-   <li> Test class : This where you can find all tests <pre> com.mastercard.EnglishSentenceServiceTest </pre> </li>
+   <li> Test class : This is where you can find all tests <pre> com.mastercard.EnglishSentenceServiceTest </pre> </li>
    <li> Service class : This is where code exercise is implemented <pre> com.mastercard.service.EnglishSentenceService </pre> </li>
-   <li> Service Interface : Above class implements this inteface<pre> com.mastercard.service.SentenceService </pre> </li>
+   <li> Service Interface : Above service class implements this inteface<pre> com.mastercard.service.SentenceService </pre> </li>
    <li> Result pojo : This is pojo which is returned by service methods<pre> com.mastercard.service.LongestWordResult </pre> </li>
 </ol>
 </li>
@@ -32,7 +32,7 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
     <li>When input is other than english language it simply processes it as english sentence .</li>
     <li>When sentence has more than one longest word then findLongestWord() only returns first longest word in  a  sentence. </li>
    <li>However I have created bonus method called findAllLongestWord() where it will give all the longest words. I kept it as separate method because time complexity varies for both methods.</li>
-<li>I have also created concise version of above methods called findLongestWord2() and findAllLongestWords2(). These methods are concise but time and space complexity increased.</li>
+<li>I have also created concise version of above methods called findLongestWord2() and findAllLongestWords2(). These methods are concise but space complexity increased.</li>
    </ol>
 </li>
 
@@ -45,6 +45,7 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
                                                   
                                  Space complexity O(K)     K is number of words in sentence
    </li>
+Concise versions
    <li> findLongestWord2()  : Time complexity  O(N) and space complexity O(N) </li>
   <li> findAllLongestWords2()  : Time complexity  O(N) and space complexity O(N) </li>
 
