@@ -9,6 +9,9 @@ public class LongestWordResult {
     }
 
     public String getLongestWord() {
+        if(word  == null){
+            return "";
+        }
         return word;
     }
 
