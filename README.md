@@ -45,7 +45,7 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <ol type="a">
     <pre>
     <li> findLongestWord()  :  Time complexity  O(N) and space complexity O(1) 
-                               where N is total length of sentence</li>
+                        where N is total length of sentence</li>
     <li> findAllLongestWords() :  Time complexity O(N)  
                                                   
                                  Space complexity O(K)     K is number of words in sentence
