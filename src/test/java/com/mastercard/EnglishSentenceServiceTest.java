@@ -23,7 +23,7 @@ public class EnglishSentenceServiceTest {
     @Test
     public void testLongestWordWhenNull(){
         LongestWordResult result= englishSentenceService.findLongestWord(null);
-        AssertUtil.assertResults(result,"",0);
+        assertResults(result,"",0);
     }
 
 
@@ -31,7 +31,7 @@ public class EnglishSentenceServiceTest {
     @Test
     public void testLongestWordWhenEmptyString(){
         LongestWordResult result= englishSentenceService.findLongestWord("");
-        AssertUtil.assertResults(result,"",0);
+        assertResults(result,"",0);
     }
 
 
@@ -40,7 +40,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordServce(){
         String sentence = "The cow jumped over the moon";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"jumped",6);
+        assertResults(result,"jumped",6);
     }
 
     //this tests when  uneven space
@@ -48,7 +48,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordWhenUnevenSpaces(){
         String sentence = "The                   cow jumped over    the  water mountain      .";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"mountain",8);
+        assertResults(result,"mountain",8);
     }
 
     //test when word have punctuation  marks
@@ -56,7 +56,7 @@ public class EnglishSentenceServiceTest {
     public  void testLongestWordWhenPunctuationMarks(){
         String sentence = "The                   cow jumped!!!!!!!!!! over    the  water mountain      .";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"mountain",8);
+        assertResults(result,"mountain",8);
     }
 
     //this tests when  first word is longer
@@ -64,7 +64,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordWhenFirstWordIsLonger(){
         String sentence = "elephant                    jumped over    the  water moon      .";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"elephant",8);
+        assertResults(result,"elephant",8);
     }
 
     //this tests when  last word is longer
@@ -72,7 +72,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordWhenLastWordIsLonger(){
         String sentence = "elephant                    jumped over    the  water mountains";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"mountains",9);
+        assertResults(result,"mountains",9);
     }
 
     //this tests one word sentences
@@ -80,7 +80,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordWhenOneWord(){
         String sentence = "Jumped";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"Jumped",6);
+        assertResults(result,"Jumped",6);
     }
 
     //this tests one letter sentences
@@ -88,7 +88,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordWhenOneLetter(){
         String sentence = "J";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"J",1);
+        assertResults(result,"J",1);
     }
 
     //test incremental words
@@ -96,7 +96,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordWhenIncrementalLetter(){
         String sentence = "j jj jjj jjjj jjjjj jjjjjj jjjjjjj";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"jjjjjjj",7);
+        assertResults(result,"jjjjjjj",7);
     }
 
     //this tests when sentences has invisible characters
@@ -105,7 +105,7 @@ public class EnglishSentenceServiceTest {
         String sentence = "The            " +
                 "                  cow jumped over    the  water mountain      .";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,"mountain",8);
+        assertResults(result,"mountain",8);
     }
 
     //this tests when sentence is not english
@@ -113,7 +113,7 @@ public class EnglishSentenceServiceTest {
     public void testLongestWordWhenWhenNonEnglish(){
         String sentence = "もう一度言ってください";
         LongestWordResult result= englishSentenceService.findLongestWord(sentence);
-        AssertUtil.assertResults(result,sentence,11);
+        assertResults(result,sentence,11);
     }
 
 
@@ -142,7 +142,7 @@ public class EnglishSentenceServiceTest {
                 "Same an quit most an. Admitting an mr disposing sportsmen. Tried on cause no spoil arise plate. Longer ladies valley get esteem use led six. Middletons resolution advantages expression themselves partiality so me at. West none hope if sing oh sent tell is. \n" +
                 "\n";
         LongestWordResult result= englishSentenceService.findLongestWord(paragraph);
-        AssertUtil.assertResults(result,"Pneumonoultramicroscopicsilicovolcanoconiosis",45);
+        assertResults(result,"Pneumonoultramicroscopicsilicovolcanoconiosis",45);
     }
 
 
@@ -152,44 +152,44 @@ public class EnglishSentenceServiceTest {
 
       LongestWordResult[] results  = englishSentenceService.findAllLongestWords("Jumped bumped pumped tumped");
         assertEquals(4,results.length);
-        AssertUtil.assertResults(results[0],"Jumped",6);
-        AssertUtil.assertResults(results[1],"bumped",6);
-        AssertUtil.assertResults(results[2],"pumped",6);
-        AssertUtil.assertResults(results[3],"tumped",6);
+        assertResults(results[0],"Jumped",6);
+        assertResults(results[1],"bumped",6);
+        assertResults(results[2],"pumped",6);
+        assertResults(results[3],"tumped",6);
 
     }
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when null
     @Test
     public void  testFindAllLongestWordWhenNull(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWords(null);
         assertEquals(1,results.length);
-        AssertUtil.assertResults(results[0],"",0);
+        assertResults(results[0],"",0);
     }
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when sentence is empty
     @Test
     public void  testFindAllLongestWordWhenEmpty(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWords("");
         assertEquals(1,results.length);
-        AssertUtil.assertResults(results[0],"",0);
+        assertResults(results[0],"",0);
     }
 
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when last sentence is longest
     @Test
     public void  testFindAllLongestWordWhenLastisLongest(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWords("Jumped bumped pumped tumped mountain");
         assertEquals(1,results.length);
-        AssertUtil.assertResults(results[0],"mountain",8);
+        assertResults(results[0],"mountain",8);
     }
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when first sentence is longest
     @Test
     public void  testFindAllLongestWordWhenFirstisLongest(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWords("mountain Jumped bumped pumped tumped");
         assertEquals(1,results.length);
-        AssertUtil.assertResults(results[0],"mountain",8);
+        assertResults(results[0],"mountain",8);
     }
 
     //tests if multiple words are longest in first and last sentence
@@ -197,8 +197,8 @@ public class EnglishSentenceServiceTest {
     public void  testFindAllLongestWordWhenFirstAndLastIsLong(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWords("mountain Jumped bumped pumped tumped mountain");
         assertEquals(2,results.length);
-        AssertUtil.assertResults(results[0],"mountain",8);
-        AssertUtil.assertResults(results[1],"mountain",8);
+        assertResults(results[0],"mountain",8);
+        assertResults(results[1],"mountain",8);
     }
 
 

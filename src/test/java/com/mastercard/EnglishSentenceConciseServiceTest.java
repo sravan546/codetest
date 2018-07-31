@@ -160,7 +160,7 @@ public class EnglishSentenceConciseServiceTest {
 
     }
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when sentence is null
     @Test
     public void  testFindAllLongestWordWhenNull(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWordsConcise(null);
@@ -168,7 +168,7 @@ public class EnglishSentenceConciseServiceTest {
         assertResults(results[0],"",0);
     }
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when sentence is empty
     @Test
     public void  testFindAllLongestWordWhenEmpty(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWordsConcise("");
@@ -177,7 +177,7 @@ public class EnglishSentenceConciseServiceTest {
     }
 
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when last sentence is longest
     @Test
     public void  testFindAllLongestWordWhenLastisLongest(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWordsConcise("Jumped bumped pumped tumped mountain");
@@ -185,7 +185,7 @@ public class EnglishSentenceConciseServiceTest {
         assertResults(results[0],"mountain",8);
     }
 
-    //tests if multiple words are longest in sentence
+    //tests if multiple words are longest in sentence when first sentence is longest
     @Test
     public void  testFindAllLongestWordWhenFirstisLongest(){
         LongestWordResult[] results  = englishSentenceService.findAllLongestWordsConcise("mountain Jumped bumped pumped tumped");
