@@ -9,7 +9,16 @@ For this project I used java and Maven .<b>Please install jdk 1.5 or above and m
   <li> Go into project root directory. Which is "codetest" directory</li>
   <li> Execute below command <pre>mvn test</pre></li>
   <li> You should see output as below <br>
-    <pre> Results: Tests run: 19, Failures: 0, Errors: 0, Skipped: 0</pre></li>
+    <pre> 
+          -------------------------------------------------------
+          T E S T S
+          -------------------------------------------------------
+          Running com.mastercard.EnglishSentenceServiceTest
+          Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+          Running com.mastercard.EnglishSentenceConciseServiceTest
+          Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec<br>
+          Results :
+          Tests run: 38, Failures: 0, Errors: 0, Skipped: 0</pre></li>
   </ol></li>
   
    <li>
